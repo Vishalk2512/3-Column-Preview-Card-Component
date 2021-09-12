@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --Bright-orange: hsl(31, 77%, 52%);
+    --Dark-cyan: hsl(184, 100%, 22%);
+    --Very-dark-cyan: hsl(179, 100%, 13%);
+    /* Paragraphs */
+    --Transparent-white: hsla(0, 0%, 100%, 0.75);
+    /* background, headings, buttons */
+    --very-light-gray: hsl(0, 0%, 95%);
+}
+body {
+    font-family: "Lexend Deca", sans-serif;
+    background-color: var(--very-light-gray);
+    padding: 3.5em 1.5em;
+    display: flex;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    border-radius: 0.5rem;
+    overflow: hidden;
+}
+
+.card {
+    width: 100%;
+    max-width: 375px;
+    padding: 3em;
+}
+
+.card-first {
+    background-color: var(--Bright-orange);
+}
+.card-second {
+    background-color: var(--Dark-cyan);
+}
+.card-third {
+    background-color: var(--Very-dark-cyan);
+}
+h1 {
+    color: var(--very-light-gray);
+    text-transform: uppercase;
+    margin: 0.9em 0;
+    font-family: "Big Shoulders Display", cursive;
+    font-weight: 700;
+}
+
+p {
+    font-size: 0.9375rem;
+    color: var(--Transparent-white);
+    margin-bottom: 1.5em;
+    font-weight: 400;
+    font-family: "Lexend Deca", sans-serif;
+    line-height: 1.5em;
+    padding-right: 3.5em;
+}
+
+.btn {
+    padding: 1em 2em;
+    border-radius: 2.5rem;
+    border: none;
+    font-family: "Lexend Deca", sans-serif;
+    font-weight: 400;
+    background-color: var(--very-light-gray);
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+}
+.btn:hover {
+    background-color: transparent;
+    border: 2px solid var(--very-light-gray);
+    color: var(--very-light-gray);
+    margin: -2px;
+}
+.btn-first {
+    color: var(--Bright-orange);
+}
+.btn-second {
+    color: var(--Dark-cyan);
+}
+.btn-third {
+    color: var(--Very-dark-cyan);
+}
+
+@media (min-width: 1125px) {
+    .wrapper {
+        flex-direction: row;
+    }
+    body {
+        padding: 0 1.5em;
+    }
+    p {
+        margin-bottom: 5em;
+    }
+}
