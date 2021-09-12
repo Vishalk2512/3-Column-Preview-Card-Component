@@ -70,7 +70,6 @@ p {
     font-weight: 400;
     background-color: var(--very-light-gray);
     cursor: pointer;
-    -webkit-tap-highlight-color: transparent;
 }
 .btn:hover {
     background-color: transparent;
